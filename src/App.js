@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import React from 'react'
 import FullCalendar from '@fullcalendar/react' // must go before plugins
