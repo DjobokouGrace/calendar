@@ -23,6 +23,7 @@ function Register() {
     
 }
   return (
+    <div className="body">
     <div class="login-page">
       <h2 className="title">Inscription</h2>
       {error !== '' && <span>{error.message}</span>}
@@ -37,6 +38,7 @@ function Register() {
         </form>
       </div>
     </div>
+  </div>
   )
 }
 
