@@ -96,7 +96,8 @@
   background: linear-gradient(to left, #5259b8, #6f70c2);
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;      
+  -moz-osx-font-smoothing: grayscale;  
+  height: 720px;   
 }
 .title{
     text-align: center;
