@@ -1,0 +1,86 @@
+{
+  "uuid": "8ebdbad2-c92e-4410-89a0-abf77ea7f23a",
+  "lastMigration": 27,
+  "name": "Gestionsalle (copy)",
+  "endpointPrefix": "api",
+  "latency": 0,
+  "port": 3002,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "60913375-9a93-45d0-b2ed-c9fa887dab5a",
+      "type": "crud",
+      "documentation": "event  crud",
+      "method": "",
+      "endpoint": "event",
+      "responses": [
+        {
+          "uuid": "261f8f10-3f07-47da-92c5-7a9363d7a43b",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "DATABUCKET",
+          "filePath": "",
+          "databucketID": "qrt4",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "60913375-9a93-45d0-b2ed-c9fa887dab5a"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [
+    {
+      "uuid": "dc90b7bd-2fe2-4057-9534-49e524856cdb",
+      "id": "qrt4",
+      "name": "event data",
+      "documentation": "",
+      "value": "[\r\n  {\r\n    \"id\": 0,\r\n    \"name\": \"Mathematique  de  IA\",\r\n    \"typeEvent\": \"cours\",\r\n    \"duration\": 4,\r\n    \"dateEvent\": \"2023-05-21T01:25:39.822Z\",\r\n    \"salleId\": \"amphi500\",\r\n    \"classeId\": \"licene3\",\r\n    \"professeur\": \"Jerry Sutton\"\r\n  },\r\n  {\r\n    \"id\": 1,\r\n    \"name\": \"Fondamentaux du  genie  logiciel\",\r\n    \"typeEvent\": \"tp\",\r\n    \"duration\": 2,\r\n    \"dateEvent\": \"2023-04-08T22:33:07.283Z\",\r\n    \"salleId\": \"amphi500\",\r\n    \"classeId\": \"Master1\",\r\n    \"professeur\": \"Debra Schneider\"\r\n  },\r\n  {\r\n    \"id\": 2,\r\n    \"name\": \"Optimisation Avance\",\r\n    \"typeEvent\": \"tp\",\r\n    \"duration\": 2,\r\n    \"dateEvent\": \"2023-05-11T20:48:23.495Z\",\r\n    \"salleId\": \"amphiFss\",\r\n    \"classeId\": \"licene2\",\r\n    \"professeur\": \"Curry Aguirre\"\r\n  },\r\n  {\r\n    \"id\": 3,\r\n    \"name\": \"Environnement du  Big Data\",\r\n    \"typeEvent\": \"tp\",\r\n    \"duration\": 4,\r\n    \"dateEvent\": \"2023-04-06T19:08:40.305Z\",\r\n    \"salleId\": \"amphi500\",\r\n    \"classeId\": \"licene1\",\r\n    \"professeur\": \"Pope Wolf\"\r\n  },\r\n  {\r\n    \"id\": 4,\r\n    \"name\": \"Environnement du  Big Data\",\r\n    \"typeEvent\": \"td\",\r\n    \"duration\": 2,\r\n    \"dateEvent\": \"2023-04-04T08:48:40.791Z\",\r\n    \"salleId\": \"amphi1000\",\r\n    \"classeId\": \"Master2\",\r\n    \"professeur\": \"Weiss Dennis\"\r\n  },\r\n  {\r\n    \"id\": 5,\r\n    \"name\": \"Gestion  et  creation entreprise\",\r\n    \"typeEvent\": \"td\",\r\n    \"duration\": 4,\r\n    \"dateEvent\": \"2023-04-01T21:53:02.960Z\",\r\n    \"salleId\": \"amphiJohnson\",\r\n    \"classeId\": \"licene1\",\r\n    \"professeur\": \"Marsh Wiley\"\r\n  },\r\n  {\r\n    \"id\": 6,\r\n    \"name\": \"Fondamentaux du  genie  logiciel\",\r\n    \"typeEvent\": \"tp\",\r\n    \"duration\": 4,\r\n    \"dateEvent\": \"2023-05-07T22:43:01.555Z\",\r\n    \"salleId\": \"amphi1000\",\r\n    \"classeId\": \"licene2\",\r\n    \"professeur\": \"Buckner Allison\"\r\n  },\r\n  {\r\n    \"id\": 7,\r\n    \"name\": \"Optimisation Avance\",\r\n    \"typeEvent\": \"td\",\r\n    \"duration\": 4,\r\n    \"dateEvent\": \"2023-04-25T03:27:07.237Z\",\r\n    \"salleId\": \"amphi500\",\r\n    \"classeId\": \"licene3\",\r\n    \"professeur\": \"Iris Collins\"\r\n  },\r\n  {\r\n    \"id\": 8,\r\n    \"name\": \"Mathematique  de  IA\",\r\n    \"typeEvent\": \"cours\",\r\n    \"duration\": 2,\r\n    \"dateEvent\": \"2023-04-23T18:42:22.980Z\",\r\n    \"salleId\": \"amphiJohnson\",\r\n    \"classeId\": \"licene1\",\r\n    \"professeur\": \"Maribel David\"\r\n  },\r\n  {\r\n    \"id\": 9,\r\n    \"name\": \"Fondamentaux du  genie  logiciel\",\r\n    \"typeEvent\": \"td\",\r\n    \"duration\": 4,\r\n    \"dateEvent\": \"2023-05-22T18:49:43.487Z\",\r\n    \"salleId\": \"amphiFss\",\r\n    \"classeId\": \"Master2\",\r\n    \"professeur\": \"Hawkins Thomas\"\r\n  },\r\n  {\r\n    \"id\": 10,\r\n    \"name\": \"Mathematique  de  IA\",\r\n    \"typeEvent\": \"td\",\r\n    \"duration\": 2,\r\n    \"dateEvent\": \"2023-05-24T02:44:02.121Z\",\r\n    \"salleId\": \"amphi500\",\r\n    \"classeId\": \"licene3\",\r\n    \"professeur\": \"Spence Key\"\r\n  },\r\n  {\r\n    \"id\": 11,\r\n    \"name\": \"Mathematique  de  IA\",\r\n    \"typeEvent\": \"cours\",\r\n    \"duration\": 4,\r\n    \"dateEvent\": \"2023-04-18T06:34:47.834Z\",\r\n    \"salleId\": \"amphiFds\",\r\n    \"classeId\": \"licene2\",\r\n    \"professeur\": \"Evangeline Guy\"\r\n  },\r\n  {\r\n    \"id\": 12,\r\n    \"name\": \"Gestion  et  creation entreprise\",\r\n    \"typeEvent\": \"td\",\r\n    \"duration\": 4,\r\n    \"dateEvent\": \"2023-05-31T23:16:26.039Z\",\r\n    \"salleId\": \"amphiJohnson\",\r\n    \"classeId\": \"licene1\",\r\n    \"professeur\": \"Blackburn Mccormick\"\r\n  },\r\n  {\r\n    \"id\": 13,\r\n    \"name\": \"Gestion  et  creation entreprise\",\r\n    \"typeEvent\": \"tp\",\r\n    \"duration\": 2,\r\n    \"dateEvent\": \"2023-04-05T00:41:14.766Z\",\r\n    \"salleId\": \"amphiFss\",\r\n    \"classeId\": \"licene1\",\r\n    \"professeur\": \"Morrison Robbins\"\r\n  },\r\n  {\r\n    \"id\": 14,\r\n    \"name\": \"Mathematique  de  IA\",\r\n    \"typeEvent\": \"td\",\r\n    \"duration\": 2,\r\n    \"dateEvent\": \"2023-05-26T11:19:27.284Z\",\r\n    \"salleId\": \"amphiJohnson\",\r\n    \"classeId\": \"Master2\",\r\n    \"professeur\": \"Maricela Davenport\"\r\n  },\r\n  {\r\n    \"id\": 15,\r\n    \"name\": \"Environnement du  Big Data\",\r\n    \"typeEvent\": \"td\",\r\n    \"duration\": 4,\r\n    \"dateEvent\": \"2023-04-08T20:46:18.342Z\",\r\n    \"salleId\": \"amphiFss\",\r\n    \"classeId\": \"Master2\",\r\n    \"professeur\": \"Maldonado Morin\"\r\n  },\r\n  {\r\n    \"id\": 16,\r\n    \"name\": \"Environnement du  Big Data\",\r\n    \"typeEvent\": \"cours\",\r\n    \"duration\": 2,\r\n    \"dateEvent\": \"2023-04-11T11:52:30.762Z\",\r\n    \"salleId\": \"amphiFds\",\r\n    \"classeId\": \"licene3\",\r\n    \"professeur\": \"Fannie Smith\"\r\n  },\r\n  {\r\n    \"id\": 17,\r\n    \"name\": \"Mathematique  de  IA\",\r\n    \"typeEvent\": \"td\",\r\n    \"duration\": 4,\r\n    \"dateEvent\": \"2023-04-23T14:41:22.037Z\",\r\n    \"salleId\": \"amphiJohnson\",\r\n    \"classeId\": \"licene3\",\r\n    \"professeur\": \"Mindy Hoffman\"\r\n  },\r\n  {\r\n    \"id\": 18,\r\n    \"name\": \"Mathematique  de  IA\",\r\n    \"typeEvent\": \"tp\",\r\n    \"duration\": 2,\r\n    \"dateEvent\": \"2023-04-15T09:16:01.411Z\",\r\n    \"salleId\": \"amphiJohnson\",\r\n    \"classeId\": \"licene3\",\r\n    \"professeur\": \"Yesenia Long\"\r\n  },\r\n  {\r\n    \"id\": 19,\r\n    \"name\": \"Fondamentaux du  genie  logiciel\",\r\n    \"typeEvent\": \"cours\",\r\n    \"duration\": 4,\r\n    \"dateEvent\": \"2023-04-08T08:30:57.858Z\",\r\n    \"salleId\": \"amphiFds\",\r\n    \"classeId\": \"Master1\",\r\n    \"professeur\": \"Iva Bean\"\r\n  },\r\n  {\r\n    \"id\": 20,\r\n    \"name\": \"Optimisation Avance\",\r\n    \"typeEvent\": \"td\",\r\n    \"duration\": 4,\r\n    \"dateEvent\": \"2023-04-03T07:47:03.457Z\",\r\n    \"salleId\": \"amphiFss\",\r\n    \"classeId\": \"Master2\",\r\n    \"professeur\": \"Jacobson Fitzpatrick\"\r\n  },\r\n  {\r\n    \"id\": 21,\r\n    \"name\": \"Environnement du  Big Data\",\r\n    \"typeEvent\": \"cours\",\r\n    \"duration\": 4,\r\n    \"dateEvent\": \"2023-05-23T18:28:41.732Z\",\r\n    \"salleId\": \"amphiFss\",\r\n    \"classeId\": \"licene2\",\r\n    \"professeur\": \"Puckett Moses\"\r\n  },\r\n  {\r\n    \"id\": 22,\r\n    \"name\": \"Mathematique  de  IA\",\r\n    \"typeEvent\": \"tp\",\r\n    \"duration\": 4,\r\n    \"dateEvent\": \"2023-05-24T06:32:55.679Z\",\r\n    \"salleId\": \"amphiFds\",\r\n    \"classeId\": \"Master2\",\r\n    \"professeur\": \"Norton Page\"\r\n  },\r\n  {\r\n    \"id\": 23,\r\n    \"name\": \"Fondamentaux du  genie  logiciel\",\r\n    \"typeEvent\": \"td\",\r\n    \"duration\": 4,\r\n    \"dateEvent\": \"2023-04-06T03:03:19.608Z\",\r\n    \"salleId\": \"amphiFss\",\r\n    \"classeId\": \"licene1\",\r\n    \"professeur\": \"Tracy Vang\"\r\n  },\r\n  {\r\n    \"id\": 24,\r\n    \"name\": \"Mathematique  de  IA\",\r\n    \"typeEvent\": \"cours\",\r\n    \"duration\": 4,\r\n    \"dateEvent\": \"2023-04-09T20:22:46.290Z\",\r\n    \"salleId\": \"amphiFss\",\r\n    \"classeId\": \"Master1\",\r\n    \"professeur\": \"Katie Navarro\"\r\n  },\r\n  {\r\n    \"id\": 25,\r\n    \"name\": \"Fondamentaux du  genie  logiciel\",\r\n    \"typeEvent\": \"cours\",\r\n    \"duration\": 4,\r\n    \"dateEvent\": \"2023-04-02T01:48:09.690Z\",\r\n    \"salleId\": \"amphiJohnson\",\r\n    \"classeId\": \"Master1\",\r\n    \"professeur\": \"Marilyn Rosales\"\r\n  },\r\n  {\r\n    \"id\": 26,\r\n    \"name\": \"Fondamentaux du  genie  logiciel\",\r\n    \"typeEvent\": \"cours\",\r\n    \"duration\": 4,\r\n    \"dateEvent\": \"2023-04-09T23:33:24.562Z\",\r\n    \"salleId\": \"amphiFss\",\r\n    \"classeId\": \"licene1\",\r\n    \"professeur\": \"Gilbert Huber\"\r\n  },\r\n  {\r\n    \"id\": 27,\r\n    \"name\": \"Fondamentaux du  genie  logiciel\",\r\n    \"typeEvent\": \"cours\",\r\n    \"duration\": 4,\r\n    \"dateEvent\": \"2023-05-08T18:46:14.851Z\",\r\n    \"salleId\": \"amphiFss\",\r\n    \"classeId\": \"licene2\",\r\n    \"professeur\": \"Blair Valdez\"\r\n  },\r\n  {\r\n    \"id\": 28,\r\n    \"name\": \"Fondamentaux du  genie  logiciel\",\r\n    \"typeEvent\": \"td\",\r\n    \"duration\": 2,\r\n    \"dateEvent\": \"2023-04-25T02:47:54.145Z\",\r\n    \"salleId\": \"amphi1000\",\r\n    \"classeId\": \"licene1\",\r\n    \"professeur\": \"Martin Baldwin\"\r\n  },\r\n  {\r\n    \"id\": 29,\r\n    \"name\": \"Fondamentaux du  genie  logiciel\",\r\n    \"typeEvent\": \"cours\",\r\n    \"duration\": 2,\r\n    \"dateEvent\": \"2023-04-10T14:52:38.794Z\",\r\n    \"salleId\": \"amphi500\",\r\n    \"classeId\": \"licene2\",\r\n    \"professeur\": \"Acevedo Lambert\"\r\n  },\r\n  {\r\n    \"id\": 30,\r\n    \"name\": \"Fondamentaux du  genie  logiciel\",\r\n    \"typeEvent\": \"td\",\r\n    \"duration\": 4,\r\n    \"dateEvent\": \"2023-05-11T22:41:52.852Z\",\r\n    \"salleId\": \"amphiJohnson\",\r\n    \"classeId\": \"licene3\",\r\n    \"professeur\": \"Hart Byers\"\r\n  },\r\n  {\r\n    \"id\": 31,\r\n    \"name\": \"Gestion  et  creation entreprise\",\r\n    \"typeEvent\": \"tp\",\r\n    \"duration\": 4,\r\n    \"dateEvent\": \"2023-04-09T09:09:40.463Z\",\r\n    \"salleId\": \"amphiFds\",\r\n    \"classeId\": \"licene3\",\r\n    \"professeur\": \"Rivera Owens\"\r\n  },\r\n  {\r\n    \"id\": 32,\r\n    \"name\": \"Gestion  et  creation entreprise\",\r\n    \"typeEvent\": \"td\",\r\n    \"duration\": 2,\r\n    \"dateEvent\": \"2023-05-04T20:39:59.185Z\",\r\n    \"salleId\": \"amphiFss\",\r\n    \"classeId\": \"Master2\",\r\n    \"professeur\": \"Leblanc Hardy\"\r\n  },\r\n  {\r\n    \"id\": 33,\r\n    \"name\": \"Fondamentaux du  genie  logiciel\",\r\n    \"typeEvent\": \"tp\",\r\n    \"duration\": 4,\r\n    \"dateEvent\": \"2023-04-21T12:19:09.057Z\",\r\n    \"salleId\": \"amphiFss\",\r\n    \"classeId\": \"Master1\",\r\n    \"professeur\": \"Emilia Klein\"\r\n  },\r\n  {\r\n    \"id\": 34,\r\n    \"name\": \"Fondamentaux du  genie  logiciel\",\r\n    \"typeEvent\": \"td\",\r\n    \"duration\": 4,\r\n    \"dateEvent\": \"2023-05-24T04:25:50.316Z\",\r\n    \"salleId\": \"amphiJohnson\",\r\n    \"classeId\": \"Master1\",\r\n    \"professeur\": \"Bernard Richardson\"\r\n  },\r\n  {\r\n    \"id\": 35,\r\n    \"name\": \"Gestion  et  creation entreprise\",\r\n    \"typeEvent\": \"cours\",\r\n    \"duration\": 2,\r\n    \"dateEvent\": \"2023-05-14T01:52:19.312Z\",\r\n    \"salleId\": \"amphiFss\",\r\n    \"classeId\": \"licene3\",\r\n    \"professeur\": \"Matilda Norris\"\r\n  },\r\n  {\r\n    \"id\": 36,\r\n    \"name\": \"Mathematique  de  IA\",\r\n    \"typeEvent\": \"tp\",\r\n    \"duration\": 4,\r\n    \"dateEvent\": \"2023-04-10T19:40:27.767Z\",\r\n    \"salleId\": \"amphi500\",\r\n    \"classeId\": \"Master2\",\r\n    \"professeur\": \"Tammie Nguyen\"\r\n  },\r\n  {\r\n    \"id\": 37,\r\n    \"name\": \"Mathematique  de  IA\",\r\n    \"typeEvent\": \"tp\",\r\n    \"duration\": 2,\r\n    \"dateEvent\": \"2023-04-20T19:49:02.706Z\",\r\n    \"salleId\": \"amphi1000\",\r\n    \"classeId\": \"Master1\",\r\n    \"professeur\": \"Manuela Mcknight\"\r\n  },\r\n  {\r\n    \"id\": 38,\r\n    \"name\": \"Environnement du  Big Data\",\r\n    \"typeEvent\": \"td\",\r\n    \"duration\": 4,\r\n    \"dateEvent\": \"2023-05-28T00:38:46.832Z\",\r\n    \"salleId\": \"amphiFds\",\r\n    \"classeId\": \"Master2\",\r\n    \"professeur\": \"Millie Foley\"\r\n  },\r\n  {\r\n    \"id\": 39,\r\n    \"name\": \"Optimisation Avance\",\r\n    \"typeEvent\": \"cours\",\r\n    \"duration\": 4,\r\n    \"dateEvent\": \"2023-05-27T22:51:20.066Z\",\r\n    \"salleId\": \"amphiFss\",\r\n    \"classeId\": \"Master1\",\r\n    \"professeur\": \"Nixon Church\"\r\n  },\r\n  {\r\n    \"id\": 40,\r\n    \"name\": \"Fondamentaux du  genie  logiciel\",\r\n    \"typeEvent\": \"tp\",\r\n    \"duration\": 4,\r\n    \"dateEvent\": \"2023-04-19T04:28:52.308Z\",\r\n    \"salleId\": \"amphi1000\",\r\n    \"classeId\": \"licene1\",\r\n    \"professeur\": \"Faith Clark\"\r\n  },\r\n  {\r\n    \"id\": 41,\r\n    \"name\": \"Mathematique  de  IA\",\r\n    \"typeEvent\": \"cours\",\r\n    \"duration\": 4,\r\n    \"dateEvent\": \"2023-05-01T08:23:32.715Z\",\r\n    \"salleId\": \"amphi1000\",\r\n    \"classeId\": \"Master1\",\r\n    \"professeur\": \"Craig Terry\"\r\n  },\r\n  {\r\n    \"id\": 42,\r\n    \"name\": \"Fondamentaux du  genie  logiciel\",\r\n    \"typeEvent\": \"td\",\r\n    \"duration\": 2,\r\n    \"dateEvent\": \"2023-04-10T18:52:07.156Z\",\r\n    \"salleId\": \"amphiFds\",\r\n    \"classeId\": \"Master2\",\r\n    \"professeur\": \"Fischer Park\"\r\n  },\r\n  {\r\n    \"id\": 43,\r\n    \"name\": \"Environnement du  Big Data\",\r\n    \"typeEvent\": \"tp\",\r\n    \"duration\": 2,\r\n    \"dateEvent\": \"2023-05-17T16:35:19.905Z\",\r\n    \"salleId\": \"amphi1000\",\r\n    \"classeId\": \"licene1\",\r\n    \"professeur\": \"Warner Bush\"\r\n  },\r\n  {\r\n    \"id\": 44,\r\n    \"name\": \"Gestion  et  creation entreprise\",\r\n    \"typeEvent\": \"tp\",\r\n    \"duration\": 2,\r\n    \"dateEvent\": \"2023-05-19T14:32:55.080Z\",\r\n    \"salleId\": \"amphiJohnson\",\r\n    \"classeId\": \"licene3\",\r\n    \"professeur\": \"Lindsay Simmons\"\r\n  },\r\n  {\r\n    \"id\": 45,\r\n    \"name\": \"Mathematique  de  IA\",\r\n    \"typeEvent\": \"tp\",\r\n    \"duration\": 4,\r\n    \"dateEvent\": \"2023-05-16T12:31:11.973Z\",\r\n    \"salleId\": \"amphi500\",\r\n    \"classeId\": \"Master2\",\r\n    \"professeur\": \"Wiley Camacho\"\r\n  },\r\n  {\r\n    \"id\": 46,\r\n    \"name\": \"Mathematique  de  IA\",\r\n    \"typeEvent\": \"tp\",\r\n    \"duration\": 2,\r\n    \"dateEvent\": \"2023-04-18T10:52:28.116Z\",\r\n    \"salleId\": \"amphi500\",\r\n    \"classeId\": \"Master2\",\r\n    \"professeur\": \"Ayers Silva\"\r\n  },\r\n  {\r\n    \"id\": 47,\r\n    \"name\": \"Optimisation Avance\",\r\n    \"typeEvent\": \"cours\",\r\n    \"duration\": 4,\r\n    \"dateEvent\": \"2023-04-01T05:39:56.952Z\",\r\n    \"salleId\": \"amphiFss\",\r\n    \"classeId\": \"Master1\",\r\n    \"professeur\": \"Strong Meadows\"\r\n  },\r\n  {\r\n    \"id\": 48,\r\n    \"name\": \"Environnement du  Big Data\",\r\n    \"typeEvent\": \"tp\",\r\n    \"duration\": 4,\r\n    \"dateEvent\": \"2023-05-26T04:57:45.018Z\",\r\n    \"salleId\": \"amphi500\",\r\n    \"classeId\": \"licene3\",\r\n    \"professeur\": \"Shirley Hess\"\r\n  },\r\n  {\r\n    \"id\": 49,\r\n    \"name\": \"Gestion  et  creation entreprise\",\r\n    \"typeEvent\": \"tp\",\r\n    \"duration\": 2,\r\n    \"dateEvent\": \"2023-04-27T06:32:02.111Z\",\r\n    \"salleId\": \"amphi500\",\r\n    \"classeId\": \"licene1\",\r\n    \"professeur\": \"Gloria Dale\"\r\n  }\r\n]"
+    }
+  ]
+}
