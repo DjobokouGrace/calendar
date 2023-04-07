@@ -4,15 +4,6 @@
   width: 360px;
   padding: 4% 0 0;
   margin: auto;
-
-  background: #5282b8; /* fallback for old browsers */
-  background: -webkit-linear-gradient(right, #5259b8, #6f70c2);
-  background: -moz-linear-gradient(right, #5259b8, #6f70c2);
-  background: -o-linear-gradient(right, #5259b8, #6f70c2);
-  background: linear-gradient(to left, #5259b8, #6f70c2);
-  font-family: "Roboto", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; 
 }
 .form {
   position: relative;
@@ -103,9 +94,7 @@
   background: -moz-linear-gradient(right, #5259b8, #6f70c2);
   background: -o-linear-gradient(right, #5259b8, #6f70c2);
   background: linear-gradient(to left, #5259b8, #6f70c2);
-  font-family: "Roboto", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;  
+  font-family: "Roboto", sans-serif; 
   height: 720px;   
 }
 .title{

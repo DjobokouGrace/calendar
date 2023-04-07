@@ -1,7 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
-function Timetable() {
+function Exams() {
   return <div
       style={{
         display: "flex",
@@ -40,4 +40,4 @@ function Timetable() {
     </div>
 }
 
-export default Timetable;
+export default Exams;

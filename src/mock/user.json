@@ -1,0 +1,79 @@
+[
+    {
+      "id": 0,
+      "nom": "Brigitte",
+      "prenom": " Dejesus",
+      "adresse": "225 Withers Street, Zortman, Maine",
+      "telephone": "00228 (864) 506-3077",
+      "disponibilite": true,
+      "username": "Castro",
+      "password": "password",
+      "role": "etudiant"
+    },
+    {
+      "id": 1,
+      "nom": "Sharpe",
+      "prenom": " Collier",
+      "adresse": "695 Duryea Place, Norvelt, Ohio",
+      "telephone": "00228 (967) 431-3770",
+      "disponibilite": true,
+      "username": "Mable",
+      "password": "password",
+      "role": "etudiant"
+    },
+    {
+      "id": 2,
+      "nom": "Alicia",
+      "prenom": " English",
+      "adresse": "955 Hudson Avenue, Breinigsville, Missouri",
+      "telephone": "00228 (892) 404-2681",
+      "disponibilite": false,
+      "username": "Ayala",
+      "password": "password",
+      "role": "etudiant"
+    },
+    {
+      "id": 3,
+      "nom": "Antoinette",
+      "prenom": " Odom",
+      "adresse": "456 Crooke Avenue, Greenfields, Virgin Islands",
+      "telephone": "00228 (973) 532-3372",
+      "disponibilite": false,
+      "username": "Alexis",
+      "password": "password",
+      "role": "etudiant"
+    },
+    {
+      "id": 4,
+      "nom": "Emily",
+      "prenom": " Gilmore",
+      "adresse": "957 Osborn Street, Saticoy, Louisiana",
+      "telephone": "00228 (871) 510-2804",
+      "disponibilite": true,
+      "username": "Jill",
+      "password": "password",
+      "role": "etudiant"
+    },
+    {
+      "id": 5,
+      "nom": "Anastasia",
+      "prenom": " Maxwell",
+      "adresse": "936 Calyer Street, Wiscon, California",
+      "telephone": "00228 (900) 417-2580",
+      "disponibilite": true,
+      "username": "Dionne",
+      "password": "password",
+      "role": "etudiant"
+    },
+    {
+      "id": 6,
+      "nom": "Lesa",
+      "prenom": " Sandoval",
+      "adresse": "704 Kermit Place, Swartzville, Florida",
+      "telephone": "00228 (914) 422-2466",
+      "disponibilite": false,
+      "username": "Terrie",
+      "password": "password",
+      "role": "etudiant"
+    }
+  ]

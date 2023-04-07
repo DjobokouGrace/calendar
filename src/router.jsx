@@ -8,12 +8,11 @@ import Home from './screens/home';
 import Classrooms from './components/Classrooms';
 import Calendar from './components/Calendar';
 import Practicals from './components/Practicals';
-import Exams from './components/Exams';
-import Courses from './components/Courses';
 import Timetable from './components/Timetable';
 import RegisterProfessor from './screens/register_prof';
 import RegisterStudent from './screens/register_student';
-
+import Courses from './screens/courses';
+import Exams from './screens/exams';
 
 const router = createBrowserRouter([
     {
