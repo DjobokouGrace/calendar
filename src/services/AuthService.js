@@ -25,7 +25,6 @@ class AuthService{
     .catch((error) => error)
   }
 
-  
   register_prof(prof){
     axios.post("/professeurs/api/professeurs", {
       last_name : prof.last_name,
@@ -38,5 +37,3 @@ class AuthService{
     .catch((error) => error)
   }
 }
-
-
