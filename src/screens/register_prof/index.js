@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import "../../styles/auth.css"
 import {Link} from "react-router-dom";
 
-function Register() {
+function RegisterProfessor() {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -42,4 +42,4 @@ function Register() {
   )
 }
 
-export default Register
+export default RegisterProfessor

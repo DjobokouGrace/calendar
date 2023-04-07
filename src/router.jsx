@@ -3,9 +3,10 @@ import {
     createBrowserRouter,
 } from "react-router-dom";
 import ErrorPage from './screens/errorpage';
-import Register from './screens/register';
 import Login from './screens/login';
 import MiniDrawer from './screens/home';
+import RegisterStudent from './screens/register_student';
+import RegisterProfessor from './screens/register_prof';
 
 const router = createBrowserRouter([
     {
@@ -20,8 +21,12 @@ const router = createBrowserRouter([
                         element: <Login />
                     },
                     {
-                        path:"register",
-                        element: <Register/>,
+                        path:"register/",
+                        element: <RegisterStudent/>,
+                    },
+                    {
+                        path:"register/professor",
+                        element: <RegisterProfessor/>,
                     },
                     {
                         path: "home",
