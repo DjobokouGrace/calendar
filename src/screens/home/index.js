@@ -20,9 +20,41 @@ import DashboardIcon from "@mui/icons-material/Dashboard";
 import HistoryEduIcon from "@mui/icons-material/HistoryEdu";
 import AssuredWorkloadIcon from "@mui/icons-material/AssuredWorkload";
 import ClassIcon from "@mui/icons-material/Class";
-import Calendar from "../../components/Calendar"
+import Calendar from "../../components/Calendar";
+import ApartmentIcon from "@mui/icons-material/Apartment";
+import LogoutIcon from "@mui/icons-material/Logout";
+import { Outlet } from "react-router";
+import { NavLink } from "react-router-dom";
 
 const drawerWidth = 240;
+
+const nav = [
+  {
+    title: "Emploi du temps",
+    icon: <DashboardIcon />,
+    to: "/home/timetable",
+  },
+  {
+    title: "Cours",
+    icon: <ClassIcon />,
+    to: "/home/courses",
+  },
+  {
+    title: "Examens",
+    icon: <HistoryEduIcon />,
+    to: "/home/exams",
+  },
+  {
+    title: "TP & TD",
+    icon: <AssuredWorkloadIcon />,
+    to: "/home/practicals",
+  },
+  {
+    title: "Salles",
+    icon: <ApartmentIcon />,
+    to: "/home/classrooms",
+  },
+];
 
 const openedMixin = (theme) => ({
   width: drawerWidth,
@@ -135,9 +167,14 @@ export default function MiniDrawer() {
         </DrawerHeader>
         <Divider />
         <List>
-          {["Tableau de bord", "Cours", "Examens", "TP & TD"].map(
-            (text, index) => (
-              <ListItem key={text} disablePadding sx={{ display: "block" }}>
+          {nav.map((navItem, index) => (
+            <NavLink to={navItem.to} className="nav-link" end>
+              <ListItem
+                key={navItem.title}
+                className="nav-link-li"
+                disablePadding
+                sx={{ display: "block" }}
+              >
                 <ListItemButton
                   sx={{
                     minHeight: 48,
@@ -152,21 +189,47 @@ export default function MiniDrawer() {
                       justifyContent: "center",
                     }}
                   >
-                    {index === 0 && <DashboardIcon />}
-                    {index === 1 && <ClassIcon />}
-                    {index === 2 && <HistoryEduIcon />}
-                    {index === 3 && <AssuredWorkloadIcon />}
+                    {navItem.icon}
                   </ListItemIcon>
-                  <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />
+                  <ListItemText
+                    primary={navItem.title}
+                    sx={{ opacity: open ? 1 : 0 }}
+                  />
                 </ListItemButton>
               </ListItem>
-            )
-          )}
+            </NavLink>
+          ))}
+        </List>
+        <Divider sx={{ marginTop: "400px" }} />
+        <List>
+          <ListItem disablePadding sx={{ display: "block" }}>
+            <ListItemButton
+              sx={{
+                minHeight: 48,
+                justifyContent: open ? "initial" : "center",
+                px: 2.5,
+              }}
+            >
+              <ListItemIcon
+                sx={{
+                  minWidth: 0,
+                  mr: open ? 3 : "auto",
+                  justifyContent: "center",
+                }}
+              >
+                <LogoutIcon />
+              </ListItemIcon>
+              <ListItemText
+                primary="Déconnexion"
+                sx={{ opacity: open ? 1 : 0 }}
+              />
+            </ListItemButton>
+          </ListItem>
         </List>
       </Drawer>
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
         <DrawerHeader />
-        <Calendar />
+        <Outlet />
       </Box>
     </Box>
   );

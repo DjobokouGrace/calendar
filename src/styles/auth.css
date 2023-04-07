@@ -106,3 +106,25 @@
     font-weight: bold;
     font-size: 30px;
 }
+
+.room:hover{
+  background-color: #1976d2;
+}
+
+.room:hover .room__link{
+  color: white !important;
+}
+
+.nav-link{
+  text-decoration: none;
+  color: black;
+}
+
+a.active .nav-link-li{
+  background-color: #1976d2;
+  color: white;
+}
+
+a.active svg{
+  color: white;
+}
