@@ -1,43 +1,60 @@
-import React from "react";
-import { Link } from "react-router-dom";
+
+import React, { useEffect, useState } from "react";
+import FullCalendar from "@fullcalendar/react";
+import dayGridPlugin from "@fullcalendar/daygrid";
+import listPlugin from "@fullcalendar/list";
+import timeGridPlugin from "@fullcalendar/timegrid";
+import axios from "axios";
 
 function Practicals() {
-  return <div
-      style={{
-        display: "flex",
-        flexWrap: "wrap",
-        gap: "20px",
-        width: "100%",
-      }}
-    >
-      {Array(10)
-        .fill()
-        .map(() => (
-          <div
-            className="room"
-            style={{
-              fontSize: "2em",
-              border: "1px solid black",
-              flex: "0 0 20%",
-              borderRadius: "7px",
-              padding: "20px",
-              fontWeight: "600",
-              cursor: "pointer",
-            }}
-          >
-            <Link
-              className="room__link"
-              to="/home/calendar"
-              style={{
-                textDecoration: "none",
-                color: "black",
-              }}
-            >
-              Salle Indien
-            </Link>
-          </div>
-        ))}
-    </div>
+    const [events, setEvents] = useState([]);
+
+    useEffect(() => {
+      axios.get("/mock/events.json").then((res) => {
+        let data = res.data.map((event, index) => {
+          let end = new Date(event.dateEvent);
+          end.setHours(end.getHours() + event.duration);
+  
+          return {
+            id: event.id,
+            title: event.name,
+            date: event.dateEvent,
+            end,
+            backgroundColor: "blue",
+            url: "/",
+            type: event.typeEvent
+          };
+        });
+        let data_filter = data.filter((i)=> {
+            return i.type === "tp" || i.type === 'td'
+        })
+        console.log(data_filter)
+        setEvents(data_filter);
+      });
+    }, []);
+  
+    function handleClick(info) {
+      info.jsEvent.preventDefault();
+      console.log("info", info);
+      console.log("info 5555", info.event._def.sourceId);
+    }
+  
+    return (
+      <div>
+        <FullCalendar
+          plugins={[dayGridPlugin, listPlugin, timeGridPlugin]}
+          initialView="dayGridMonth"
+          locale="fr"
+          events={events}
+          eventClick={handleClick}
+          headerToolbar={{
+            start: "dayGridMonth,timeGridWeek,timeGridDay listWeek",
+            center: "title",
+            end: "today prev,next",
+          }}
+        />
+      </div>
+    );
 }
 
 export default Practicals;

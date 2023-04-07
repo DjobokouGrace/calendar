@@ -7,7 +7,7 @@ import Login from './screens/login';
 import Home from './screens/home';
 import Classrooms from './components/Classrooms';
 import Calendar from './components/Calendar';
-import Practicals from './components/Practicals';
+import Practicals from './screens/practicals';
 import Timetable from './components/Timetable';
 import RegisterProfessor from './screens/register_prof';
 import RegisterStudent from './screens/register_student';
